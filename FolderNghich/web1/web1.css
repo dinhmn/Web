@@ -1,0 +1,35 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 13px;
+    width: 2000px;
+    margin: 0px auto;
+}
+#menu_top{
+    background-color:darkgreen;
+    width: auto;
+    height: 200px;
+}
+#menu_mid{
+    background-color: white;
+    height: 900px;
+    width: 2000px;
+    
+}
+#menu_mid #left{
+    background-color: blueviolet;
+    height: 800px;
+    width: 400px;
+    float: left;
+}
+#menu_mid #main_mid{
+    background-color: crimson;
+    height: 800px;
+    width: 1200px;
+    float: left;
+}
+#menu_mid #right{
+    background-color: yellow;
+    height: 800px;
+    width: 400px;
+    float: left;
+}

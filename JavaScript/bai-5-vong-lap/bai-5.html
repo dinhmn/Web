@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Vòng lặp</title>
+	<meta charset="utf-8">
+</head>
+<body>
+<script type="text/javascript">
+	// for - lặp biết điểm dừng
+	// in các số từ 1 đến 10
+	console.log(1)
+	for (var i = 1; // biến đếm, biến điều kiện
+		i <=10; // điểm dừng
+		i++ // quy luật, xử lý biến đếm
+		) {
+		console.log(i) // câu lệnh
+	}
+	// vòng lặp for chưa biết điều kiện dừng
+	for(var i=1;;){
+		if(i<=10){
+			console.log(i)
+			i++
+		}else{
+			break
+		}
+	}	
+	// vòng lặp ko biết điểm dừng
+	var a =1
+	var b =10
+	while(a<=b){
+		console.log(a+b)
+		a++
+		b--
+	}
+	a = 10
+	// ktra điều kiện trước, rồi mới chạy
+	while(a<10){
+		console.log(a+' while')
+	}
+	// chạy 1 lần, rồi ktra lại
+	do {
+		console.log(a+' do while')
+	}
+	while(a<10)
+
+    var arr=['12','today','ngày mai',4, 10,'hello']
+
+	for(var i = 0; i<arr.length;i++){
+		console.log(arr[i])
+	}
+	for(var i in arr){
+		console.log(arr[i])
+	}
+
+</script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+}
+.khoi-do{
+    width: 300px;
+    height: 300px;
+    margin: 30px;
+    background-color: red;
+    /*làm mốc*/
+    position: relative;
+}
+.khoi-xanh{
+    width: 300px;
+    height: 300px;
+    margin: 30px;
+    background-color: blue;
+}
+.khoi-den{
+    width: 300px;
+    height: 100px;
+    background-color: black;
+
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+
+}

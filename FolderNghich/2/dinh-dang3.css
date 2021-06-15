@@ -1,0 +1,27 @@
+#nen1{
+    color:#FF3399;
+    background: #FECFFD;
+    text-align: center;
+}
+#doantho{
+    background: #FFFFCC ;
+    text-align: center;
+    
+}
+#bai2-4{
+    background: #6a93a9;
+    
+}
+#vanliTT{
+    background: #A06D21;
+    color: white;
+    background-image: url(C:/Users/Admin/Desktop/Ảnh/IMG-3919.jpg);
+    
+}
+#dinhdang{
+    background-image: url(./Capture.PNG);
+    background-size: auto;
+}
+table, th, td{
+    border: 1px solid coral;
+}

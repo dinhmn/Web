@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+               #wrapper{ width: 1351px;
+             height: 768px;
+             margin-left:auto; margin-right:auto}
+    #header{ width: 1351px;
+             height: auto;
+             background-color:silver}
+             
+    #menu{  width: 1351px;
+             height: 40px;
+             background-color: orangered;
+             COLOR: White;
+             LINE-HEIGHT:40PX; font-variant:small-capszz;
+             
+                  }
+    #content{width: 1351px;
+             height: 600px;
+             
+             }
+    #left{width: 300px;
+             height: 600px;
+             background-color:white;
+             float: left;
+             display: block ;
+             }
+   
+    #right{width: 1051px;
+             height: 600px;
+             background-color:white;
+             float: left;
+             line-height: normal}
+     #footer{width: 1351px;
+             height: 40px;
+             background-color: Navy; line-height: 40px;
+             
+            }
+      ol{ list-style:none}
+      ol li{ float:left}
+      ol li ol{ display: none}
+      ol li:hover ol{ display: block} 
+      ol li ol li{ margin-left: -30px}
+      .menu>ul>li {
+	display:inline-block
+}
+
+.menu>ul>li>a {
+	display:block
+}
+.menu>ul {
+	padding:0;
+	margin:0;
+	list-style:none;
+	border-radius:3;
+	background-color:orangered;
+	text-align:center
+}
+.menu>ul>li>a {
+	text-decoration:none;
+	font-variant:small-caps;
+	font-size:larger;
+	color:white;
+	padding:0 10px;
+	line-height:40px
+}
+.menu>ul>li>a:hover {
+	color:yellow
+}
+.menu>ul>li {
+	position:relative
+}
+.menu ul ul {
+	position:absolute;
+	display:none;
+	padding:0;
+	margin:0;
+	list-style:none;
+	border-radius:3;
+	width:200;
+	background-color:white;
+	box-shadow:0 0 1px gray
+}
+.menu ul ul a {
+	display:block;
+	line-height:30px;
+	color:orangered;
+	text-decoration:none;
+	font-variant:small-caps;
+	font-size:larger;
+	padding:0 10px
+}
+.menu>ul>li:hover>ul {
+	display:block
+}
+.menu ul ul a:hover {
+	background-color:orangered;
+	color:white
+}
+.form{
+    font-family: tahoma;
+    font-size: 20px;
+}
+.form input{
+    width: 100px;
+    height: 30px;
+    font-weight: bold;
+}
+.form textarea{
+    margin-top: 10px;
+    margin-bottom: 15px;
+    font-weight: bold;
+    color: gray;
+}
+.form p label{
+
+}
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+        <div id="header"><img src="./Banner.PNG"></div>
+        <div id="menu">
+            <nav class="menu">
+                <ul>
+                    <li><a href="http://c3chuvanan.edu.vn/gioi-thieu/">Giới thiệu</a></li>
+                    <li><a href="http://c3chuvanan.edu.vn/">Trang chủ</a></li>
+                    <li><a href="http://c3chuvanan.edu.vn/lien-he/">Liên hệ</a></li>
+                    <li><a href="http://c3chuvanan.edu.vn/hoat-dong/">Hoạt động & Sự kiện</a></li>
+                    <li><a href="http://c3chuvanan.edu.vn/to-chuc/">Tổ chức</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div ><h1>GỬI LIÊN HỆ</h1>
+            <h5 style="color: dimgray ;margin: auto;font-size: 15px; font-family: tahoma;">Gửi thông tin liên hệ đến chúng tôi thông qua biểu mẫu dưới đây</h5>
+        </div>
+        <div class="form">
+            <hr><br>
+        <label>Tên của bạn(bắt buộc)</label><br>
+        <textarea style="height: 50px; width: 500px;"></textarea><br>
+        <label>Địa chỉ Email(bắt buộc)</label><br>
+        <textarea style="height: 50px; width: 500px;"></textarea><br>
+        <label>Điện thoại:</label><br>
+        <textarea style="height: 50px; width: 500px;"></textarea><br>
+        <label>Người dùng:</label>
+        <input type="radio"><label>Phụ huynh</label>
+        <input type="radio"><label>Học sinh</label><br>
+        <p><label style="font-weight: bold; margin-top: 15px; font-family: tahoma;">Nội dung</label><br></p>
+        <textarea style="height: 150px; width: 500px;"></textarea><br>
+        <input type="submit" value="Gửi đi">
+        </div>
+</body>
+</html>

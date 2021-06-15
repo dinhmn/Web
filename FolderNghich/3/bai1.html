@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        alert("Nhập vào một dãy sô nguyên");
+        var n=prompt("bạn muốn nhập bao nhiêu số?");
+        var a = new Array();
+        for(var i=0; i<n; i++)
+        {
+            a[i]=parseInt(prompt("nhập số thứ "+i+" :"));
+        }
+        document.write("dạy vừa nhập: " + a +"<br>");
+        var max=1;
+        for(var i=0; i<n-1; i++)
+        {
+            var dem=0;
+            for(var j=i+1; j<n; j++)
+            {
+                if(a[i]==a[j])
+                {
+                    dem++;
+                }
+            }
+            if(dem>max)
+            {
+                max=dem;
+            }
+        }
+        document.write("số có số lần lặp lại nhiều nhất: ");
+        for(var i=0; i<n-1; i++)
+        {
+            var dem=0;
+            for(var j=i+1; j<n; j++)
+            {
+                if(a[i]==a[j])
+                {
+                    dem++;
+                }
+            }
+            if(dem==max)
+            {
+                document.write(a[i] + " ");
+            }
+        }
+    </script>
+</body>
+</html>

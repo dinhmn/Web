@@ -1,0 +1,27 @@
+.khoi-trang-chu{
+	background-color:#FFFFFF;
+	width: 960px;
+	height: 400px;
+	margin-bottom: 20px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 20px;
+	padding-right: 20px;
+	border-bottom: 1px solid black
+}
+.doan{
+	/*font-size: 20px;*/
+	/*font-weight: bold;*/
+	font-family: Arial;
+	/*text-decoration: underline;*/
+	line-height: 30px;
+}
+.image-trang-chu{
+	width: 200px;
+	float: left;
+	margin-right:20px;
+}
+.khoi-bai-viet{
+	width: 1200px;
+	border: 2px solid black;
+}
