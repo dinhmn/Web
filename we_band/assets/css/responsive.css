@@ -1,11 +1,11 @@
 
 /* PC */
-@media (min-width: 1024px) {
+@media (min-width: 64em) {
     
 }
 
 /* Tablet & mobile */
-@media (max-width: 1023px) {
+@media (max-width: 63.9375em) {
     .btn {
         padding: 15px 16px
     }
@@ -13,11 +13,15 @@
         padding: 5px 12px;
     }
     .contact-form .form-control {
+        font-size: 16px;
         padding: 15px;
     }
     .contact-info{
         line-height: 2;
         
+    }
+    .contact-submit-btn{
+        font-size: 16px;
     }
     .socials-list {
         font-size: 48px;
@@ -32,13 +36,13 @@
 
 
 /* Tablet */
-@media (min-width: 740px) and (max-width: 1023px) {
+@media (min-width: 46.25em) and (max-width: 63.9375em) {
     
 }
 
 
 /* Mobile */
-@media (max-width:740px) {
+@media (max-width: 46.1875em) {
     #header{
         overflow: hidden;
     }
