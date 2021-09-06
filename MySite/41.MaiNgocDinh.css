@@ -1,0 +1,77 @@
+
+@import url(base.css);
+
+.container {
+	width: 100%;
+	background-image: url(https://www.teahub.io/photos/full/20-202618_hala-real-madrid-wallpaper-hd-download-free-background.jpg);;
+	background-size: cover;
+	background-position: top;
+	position: absolute;
+
+}
+.container__cover {
+	background-color: rgba(99, 99, 99, 0.51);
+	width: 80%;
+	color: #fff;
+	display: flex;
+	flex-direction: column;
+	margin: 50px auto;
+
+	position: relative;
+}
+.container__cover-content h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    padding: 20px;
+}
+.container__cover-body {
+    width: 100%;
+	display: grid;
+	grid-template-columns:  50% 50%;
+}
+.container__cover-body div > h3{
+    font-size: 1.8rem;
+    font-weight: 800;
+    color: rgba(255, 255, 255, 0.863);
+    margin-left: 40px;
+	margin-bottom: 0;
+}
+.border-right {
+    padding-left: 36px;
+    border-left: solid 2px rgb(49, 255, 59);
+    margin-left: 46px;
+}
+.box-body .border-memo {
+	width: 165px;
+	padding: 3px;
+	font-size: 1.2rem;
+	text-align: center;
+	background-color: rgba(223, 222, 222, 0.801);
+	box-shadow: 3px 5px #888888;
+	
+} 
+
+.content {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #4dff56;
+
+}
+.box-body .content li {
+	list-style: none;
+}
+.icon {
+	position: relative;
+    font-size: 1.4rem;
+    left: 35px;
+    top: 27px;
+    color: #4dff56;
+
+}
+.icon1 {
+	top: 34px;
+    left: -48px
+}
+.list {
+    padding-left: 20px;
+}
