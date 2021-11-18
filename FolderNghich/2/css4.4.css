@@ -1,0 +1,17 @@
+.wrapper {
+    width: 960px;
+    height: 500px;
+    background: #FACFCF;
+    margin: 0px auto;
+}
+.main_menu ul li {
+    list-style: none;
+}
+#panel{
+    margin: 50px 0px 0px 50px;
+    width: 400px;
+    border: 1px solid #000;
+    max-height: 50px;
+    overflow: scroll;
+    
+}

@@ -1,0 +1,52 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+.khoi{
+	width: 1280px;
+	height: 800px;
+	margin: auto;
+	background-image: url(hinh.jpg);
+	background-size: cover;
+	animation: phongto 10s forwards;
+	position: relative;
+}
+
+.khoi h2{
+	width: 400px;
+	height: 50px;
+	padding: 5px 10px;
+	text-align: center;
+	box-sizing: border-box;
+	color: #cfcaca;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-top: -25px;
+	/*margin-left: -200px;*/
+	font-size: 40px;
+	font-family: tahoma;
+	animation: chuChay 4s forwards;
+	animation-delay: 3s;
+	opacity: 0;
+}
+
+@-webkit-keyframes phongto{
+	from{
+		transform: scale(1);
+	}
+	to{
+		transform: scale(1.5);
+	}
+}
+
+@-webkit-keyframes chuChay{
+	from{
+		opacity: 0;
+		margin-left: -500px;
+	}
+	to{
+		opacity: 1;
+		margin-left: -200px;
+	}
+}

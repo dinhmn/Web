@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nghich</title>
+</head>
+<body>
+    <canvas></canvas>
+</body>
+<script>
+    video = document.createElement('video')
+    canvas = document.querySelector('canvas')
+    context = document.getContext('2d')
+    tails = []
+    width = 0;
+    height = 0;
+
+    navigator.mediaDevices.getUserMedia({video : true})
+    .then(stream =>{
+        video.srcObject = stream
+        video.onloadedmetadata = () =>{
+            video.play()
+
+            width = video.videoWidth
+            height = video.videoHeight
+
+            canvas.width = width
+            canvas.height = height
+
+            loop()
+            startCaptureTail()
+        }
+    })
+
+    startCaptureTail = () {
+        setInterval(  () => {
+            const canvas = document.createElement('canvas')
+            const context = document.getContext('2d')
+            canvas.width = width
+            canvas.height = height
+            context.drawImage(video, 0, height/2, width, 2, 0, 0, width, height)
+            tails.unshift(canvas)
+            tails = tails.slice(0, 150)
+        }, 20)
+    }
+
+loop = () => {
+    context.drawImage(video, 0, 0, width, height/2, 0, 0, width, height/2)
+
+    for(let i = 0; i < 150; i++){
+        if(!tails[i]) continue
+        context.drawImage(tails[i], 0, 0, width, 2, 0, height/2 + (i*2), width, 2)
+    }
+    requestAnimationFrame(loop)
+}
+
+</script>
+</html>

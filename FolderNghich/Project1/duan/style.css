@@ -1,0 +1,19 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.clear{ clear: both;}
+.wrapper{
+    width: 960px; 
+    height: 500px; 
+    background: #F8F8F8;
+    margin: 0px auto;
+}
+.main_menu ul li {
+    list-style: none; 
+    float: left; 
+    padding: 11px 25px;
+}
+.main_menu{ background: #00A69B; margin-top: 30px;}
+.main_menu ul li a{text-decoration: none;
+font-size: 16px;}
